@@ -22,7 +22,7 @@ jobs:
         run: python3 atualizar.py
 
       - name: Salvar se mudou
-      env:
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -n "$(git status --porcelain produtos.json)" ]; then
