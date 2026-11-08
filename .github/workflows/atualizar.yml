@@ -2,7 +2,7 @@ name: Atualizar produtos
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # a cada 10 minutos (o GitHub pode atrasar um pouco)
+    - cron: "*/5 * * * *"   # a cada 10 minutos (o GitHub pode atrasar um pouco)
   workflow_dispatch:          # permite rodar na hora, pelo botão "Run workflow"
 
 permissions:
