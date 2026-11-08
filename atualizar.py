@@ -11,14 +11,11 @@ import urllib.request
 
 # Link da planilha publicada na web (formato CSV)
 CSV_URL = (
-    "https://docs.google.com/spreadsheets/d/e/"
-    "2PACX-1vTPY7EOX1AxoCUlreVUJ25s0xBoaa6sRqKveGebbJxHfYTEAySN7U91ISElmQQGZLXd-k5YTBjDLbtR"
-    "/pub?gid=67253354&single=true&output=csv"
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vS10VseRTkM6Vgd5B9SEs9nd0whVPHCpSAypaUpoS_t5gwYgQyWsHFrr7WLlOIBe-A7vdiCSvXzEO6y/pub?gid=0&single=true&output=csv"
 )
 # Endereco direto da planilha (atualiza em segundos). Usado primeiro; se falhar, usa o link publicado acima.
 CSV_DIRETO = (
-    "https://docs.google.com/spreadsheets/d/1JtPUkVYo1gqtQYi0di5bhJW-mr3Lc6cIbfrG8Wpl3zU"
-    "/gviz/tq?tqx=out:csv&gid=67253354"
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vS10VseRTkM6Vgd5B9SEs9nd0whVPHCpSAypaUpoS_t5gwYgQyWsHFrr7WLlOIBe-A7vdiCSvXzEO6y/pub?gid=0&single=true&output=csv"
 )
 SAIDA = "produtos.json"
 
