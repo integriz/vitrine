@@ -90,7 +90,7 @@
 const ARQUIVO_PRODUTOS = "produtos.json";
 
 // De quantos em quantos segundos a página confere se há produto novo (300 = 5 minutos)
-const INTERVALO_SEGUNDOS = 300;
+const INTERVALO_SEGUNDOS = 60;
 
 // Texto do botão
 const TEXTO_BOTAO = "Comprar no Mercado Livre";
@@ -132,7 +132,7 @@ function desenhar(produtos) {
 
 async function carregar() {
   try {
-    const r = await fetch(ARQUIVO_PRODUTOS, { cache: "no-cache" });
+    const r = await fetch(${ARQUIVO_PRODUTOS}?t=${Date.now()},{ cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     const dados = await r.json();
     const produtos = (Array.isArray(dados) ? dados : [])
