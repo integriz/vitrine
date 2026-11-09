@@ -132,7 +132,7 @@ function desenhar(produtos) {
 
 async function carregar() {
   try {
-    const r = await fetch(${ARQUIVO_PRODUTOS}?t=${Date.now()},{ cache: "no-store" });
+    const r = await fetch(ARQUIVO_PRODUTOS, { cache: "no-cache" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     const dados = await r.json();
     const produtos = (Array.isArray(dados) ? dados : [])
