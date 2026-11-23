@@ -75,6 +75,42 @@
   #msg[hidden] { display: none; }
   @media (max-width: 600px) { #grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 340px) { #grid { grid-template-columns: minmax(0, 1fr); } }
+
+  .avaliacao-container {
+    text-align: center;
+    padding: 18px 12px;
+    font-family: Arial, sans-serif;
+}
+
+.avaliacao-container h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 14px;
+}
+
+.btn-avaliacao {
+    display: inline-block;
+    background: #16A34A;
+    color: #FFFFFF;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.btn-avaliacao:hover {
+    background: #15803D;
+    transform: translateY(-2px);
+}
+
+.avaliacao-container p {
+    color: #666;
+    font-size: 13px;
+    margin: 12px 0 0;
+}
 </style>
 </head>
 <body>
@@ -83,15 +119,26 @@
   <div id="grid"></div>
   <p id="msg">Carregando produtos…</p>
 
-<div style="text-align: center; margin: 32px 0;">
+<!--div style="text-align: center; margin: 32px 0;">
     <a href="https://forms.gle/KzWvdUii6WiADbCo7"
        target="_blank"
        rel="noopener noreferrer"
        style="display: inline-block; background: transparent; color: #3f82e6; border: 2px solid #3f82e6; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
-      Avalie a sua compra
+      Avalie a sua compra, dê sugestões aqui
     </a>
   </div>
-</div>
+</div-->
+
+<div class="avaliacao-container">
+    <h3>Sua opinião importa!</h3>
+
+    <a href="javascript:void(0)" class="btn-avaliacao"
+       onclick="window.location.href='https://forms.gle/KzWvdUii6WiADbCo7'">
+        Avaliar minha compra ⭐
+    </a>
+
+    <p>Conte o que achou e deixe sua sugestão.</p>
+</div>  
 
 <script>
 // ===== CONFIGURAÇÃO =====
